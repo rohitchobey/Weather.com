@@ -1,0 +1,281 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    background: url(https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?cs=srgb&dl=pexels-jplenio-1118873.jpg&fm=jpg);
+    background-size: 100% ;
+    height: auto;
+    background-repeat: no-repeat;
+}
+.container{
+    display: flex;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+.card{
+    height: auto;
+    background-size: 100% 100%;
+    color: #fff;
+    border-radius:20px ;
+    padding: 40px 35px;
+    text-align: center;
+    animation-name: example;
+    animation-duration: 30s;
+    width: auto;
+    background: url(image/snow2.jpg);
+}
+  @keyframes example {
+    0%   {background:url(image/rain2.jpg)}
+    25%  {background:url(image/drizzle2.jpg)}
+    50%  {background:url(image/mist2.jpg)}
+    100% {background:url(image/snow2.jpg)}
+  }
+.card .card-img img{
+    position: relative;
+    border: 2px solid black;
+}
+.search{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search input{
+    border: none;
+    outline: none;
+    background: white;
+    color: #555;
+    padding: 10px 25px;
+    height: 50px;
+    border-radius: 29px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+.search input:hover{
+    background: url(https://img.freepik.com/free-vector/sky-background-video-conferencing_23-2148639325.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.search button{
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background:white ;
+    border-radius: 50%;
+    align-items: center;
+}
+.search button img{
+    width: 25px;
+    margin-top: 5px;
+}
+.search button:hover{
+    background: url(https://imgv3.fotor.com/images/share/Free-blue-gradient-pattern-background-from-Fotor.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.weather-icon{
+    width: 170px;
+    margin-top: 30px;
+}
+.weather h1{
+    font-size: 70px;
+    font-weight: 600;
+}
+.weather h3{
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: -10px;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+.col{
+    align-items: center;
+    text-align: left;
+    display: flex;
+}
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+.humidity, .wind{
+    font-size: 25px;
+    margin-top: -5px;
+}
+.weather{
+    display: none;
+}
+.error{
+    text-align: center;
+    justify-content: center;
+    display:flex;
+    margin-top: 20px;
+    font-size: larger;
+    display: none;
+}
+.error img{
+    height: 40vh;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:769px){
+    *{
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+    }
+    body{
+        background-size: 100% ;
+        height:auto;    
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background: transparent;
+        border: unset;
+   
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15px;
+        overflow: hidden;
+    }
+    
+    .card{
+        height: auto;
+        background-size: 100% 100%;
+        color: #fff;
+        border-radius:20px ;
+        padding: 40px 35px;
+        text-align: center;
+        animation-name: example;
+        animation-duration: 20s;
+        background: url(image/snow2.jpg);
+        width: 100%;
+    }
+      @keyframes example {
+        0%   {background:url(image/rain2.jpg)}
+        25%  {background:url(image/drizzle2.jpg)}
+        50%  {background:url(image/mist2.jpg)}
+        100% {background:url(image/snow2.jpg)}
+      }
+    .card .card-img img{
+        position: relative;
+        border: 2px solid black;
+    }
+    .search{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .search input{
+        border: none;
+        outline: none;
+        background: white;
+        color: #555;
+        padding: 10px 25px;
+        height: 50px;
+        border-radius: 29px;
+        flex: 1;
+        margin-right: 16px;
+        width: 50%;
+        font-size: 18px;
+    }
+    .search input:hover{
+        background: url(https://img.freepik.com/free-vector/sky-background-video-conferencing_23-2148639325.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .search button{
+        height: 50px;
+        width: 50px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        background:rgb(253, 252, 252) ;
+        border-radius: 50%;
+        align-items: center;
+    }
+    .search button img{
+        width: 25px;
+        margin-top: 5px;
+    }
+    .search button:hover{
+        background: url(https://imgv3.fotor.com/images/share/Free-blue-gradient-pattern-background-from-Fotor.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .weather-icon{
+        width: 170px;
+        margin-top: 30px;
+        
+    }
+    .weather h1{
+        font-size: 70px;
+        font-weight: 600;
+    }
+    .weather h3{
+        font-size: 40px;
+        font-weight: 500;
+        margin-top: -10px;
+    }
+    .details{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .col{
+        align-items: center;
+        text-align: left;
+        display: flex;
+    }
+    .col img{
+        width: 40px;
+        margin-right: 10px;
+    }
+    .humidity, .wind{
+        font-size: 25px;
+        margin-top: -5px;
+    }
+    .weather{
+        display: none;
+    }
+    .error{
+        text-align: center;
+        justify-content: center;
+        display:flex;
+        margin-top: 20px;
+        font-size: larger;
+        display: none;
+    }
+    .error img{
+        height: 40vh;
+        width: 100%;
+    }
+}
